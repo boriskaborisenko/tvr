@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPTV Player</title>
+
+    <!-- Подключаем HLS.js -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+
+    <!-- Подключаем Plyr.js для удобного плеера -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.7.4/dist/plyr.css" />
+    <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.4/dist/plyr.min.js"></script>
+
+    <style>
+        /* Стиль для основного контейнера */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: black; /* Темный фон страницы */
+        }
+
+        /* Боковая панель с каналами */
+        #sidebar {
+            width: 120px;
+            background-color: #121212;
+            color: white;
+            padding: 10px;
+            overflow-y: auto;
+        }
+
+        #sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #sidebar li {
+            margin: 10px 0;
+        }
+
+        #sidebar a {
+            color: rgba(0,0,0,1);
+            border-radius: 4px;
+            color:rgba(255,255,255,0.4);
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+            display: block;
+            padding: 5px;
+            background-color: #000;
+        }
+
+        #sidebar a:hover {
+            background-color: rgba(255,255,255,.02);
+        }
+
+        #sidebar::-webkit-scrollbar {
+            display: none; /* Скрыть вертикальную полосу прокрутки */
+        }
+
+        /* Основной контейнер плеера */
+        #main-container {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #player-container {
+            width: 80%;
+            height: 80%;
+            max-width: 1000px;
+            background-color: black;
+            display: inline-flex;
+            
+        }
+
+        /* Контейнер для плеера */
+        #player {
+            width: 100%;
+            height: 100%;
+        }
+
+        h3{color:rgba(255,255,255,0.7);}
+    </style>
+</head>
+<body>
+
+    <!-- Боковая панель -->
+    <div id="sidebar">
+        <h3>Channels</h3>
+        <ul id="channel-list">
+            <!-- Каналы будут добавляться через JavaScript -->
+        </ul>
+    </div>
+
+    <!-- Основной контейнер -->
+    <div id="main-container">
+        <!-- Контейнер для плеера -->
+        <div id="player-container">
+            <video id="player"></video>
+        </div>
+    </div>
+
+    <script>
+        // Массив каналов
+        const channels = [
+            { name: 'FOX NEWS', url: 'https://fox-foxnewsnow-samsungus.amagi.tv/playlist.m3u8' },
+            // Можно добавить еще каналы сюда
+            { name: 'ABC NEWS', url: 'https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8'},
+            { name: 'CBS NEWS', url: 'https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8'},
+            { name: 'M2', url: 'http://live.m2.tv/hls3/stream.m3u8'},
+            { name: 'Retro Music', url: 'http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8'},
+           /*  { name: '', url: ''},
+            { name: '', url: ''},
+            { name: '', url: ''},
+            { name: '', url: ''},
+            { name: '', url: ''},
+            { name: '', url: ''},
+            { name: '', url: ''}, */
+            
+            //{ name: '', url: ''},
+        ];
+
+        // Создаём список каналов в боковой панели
+        const channelList = document.getElementById('channel-list');
+        channels.forEach((channel, index) => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.textContent = channel.name;
+            a.href = '#';
+            a.onclick = () => changeChannel(channel.url);
+            li.appendChild(a);
+            channelList.appendChild(li);
+        });
+
+        let player;
+
+        // Функция для смены канала
+        function changeChannel(url) {
+            // Останавливаем старый плеер
+            if (player) {
+                player.destroy();
+            }
+
+            // Инициализация нового плеера
+            const videoElement = document.getElementById('player');
+            const hls = new Hls();
+            
+            if (Hls.isSupported()) {
+                hls.loadSource(url);
+                hls.attachMedia(videoElement);
+
+                player = new Plyr(videoElement, {
+                    controls: ['play', 'mute', 'volume', 'fullscreen'], // Убираем прогресс-бар и таймер
+                    autoplay: true
+                });
+            } else {
+                console.error('HLS не поддерживается в этом браузере');
+            }
+        }
+
+        // Изначально плеер пустой, не запускается до выбора канала
+        document.addEventListener('DOMContentLoaded', () => {
+            // По умолчанию запускаем первый канал
+            changeChannel(channels[0].url);
+        });
+    </script>
+</body>
+</html>
