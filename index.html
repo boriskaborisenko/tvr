@@ -155,11 +155,19 @@
                 <div class="clock" id="clock"></div>
                 <div class="clockName">-7 hrs</div>
             </div>
+            
             <div class="widg">
-                <div id="weather-widget">
-                    <span id="temperature" style="font-size: 1.2rem;">Loading...</span><br>
-                    <span id="location" style="font-size: 0.8rem;">Loading...</span><br>
-                    <span id="condition" style="font-size: 0.6rem;">Loading...</p> 
+                <div id="location1">
+                    <span id="location1-name" style="font-size: 0.8rem;">Loading...</span><br>
+                    <span id="location1-temperature" style="font-size: 1.2rem;">Temperature: Loading...</span><br>
+                    <span id="location1-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
+                </div>
+            </div>
+            <div class="widg">
+                <div id="location2">
+                    <span id="location2-name" style="font-size: 0.8rem;">Loading...</span><br>
+                    <span id="location2-temperature" style="font-size: 1.2rem;">Temperature: Loading...</span><br>
+                    <span id="location2-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
                 </div>
             </div>
             
@@ -264,15 +272,7 @@
 
 
 
-      // Функция для получения данных о погоде
-      const fetchWeather = () => {
-        // Координаты для локации (например, Лондон)
-        //47.03922706782047, 28.8705917663653
-        const latitude = 47.03922; // Широта
-        const longitude = 28.8705; // Долгота
-        const name = 'Home'
-
-        // URL API Open-Meteo
+    const fetchWeatherForLocation = (latitude, longitude, locationId, name) => {
         const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
 
         fetch(url)
@@ -280,22 +280,33 @@
             .then(data => {
                 const weather = data.current_weather;
 
-                // Обновляем данные на странице
-                document.getElementById('location').textContent = `${name}`;
-                document.getElementById('temperature').textContent = `${weather.temperature}°C`;
-                document.getElementById('condition').textContent = `Condition: ${weather.weathercode}`;
+                // Обновляем данные для указанной локации
+                document.getElementById(`${locationId}-name`).textContent = `${name}`;
+                document.getElementById(`${locationId}-temperature`).textContent = `${weather.temperature}°C`;
+                document.getElementById(`${locationId}-condition`).textContent = `Condition: ${weather.weathercode}`;
             })
             .catch(error => {
-                console.error('Error fetching weather data:', error);
-                document.getElementById('weather-widget').textContent = 'Error loading weather data.';
+                console.error(`Error fetching weather data for ${locationId}:`, error);
+                document.getElementById(`${locationId}-name`).textContent = 'Error loading weather data.';
             });
     };
 
-    // Инициализация при загрузке страницы
-    fetchWeather();
+    // Функция для обновления данных о погоде для обеих локаций
+    const updateWeather = () => {
+        // Локация 1: Лондон
+        //47.03852514243688, 28.8711067505124
+        fetchWeatherForLocation(47.03852, 28.8711, 'location1', 'Home');
 
-    // Обновление данных каждые 20 минут (1200000 миллисекунд)
-    setInterval(fetchWeather, 1200000);
+        // Локация 2: Нью-Йорк
+        //38.78002943156539, -77.4668776609694
+        fetchWeatherForLocation(38.7800, -77.4668, 'location2', 'Manassas Park');
+    };
+
+    // Инициализация при загрузке страницы
+    updateWeather();
+
+    // Обновление данных каждые 20 минут
+    setInterval(updateWeather, 1200000);
         
 
         // Изначально плеер пустой, не запускается до выбора канала
