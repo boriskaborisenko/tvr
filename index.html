@@ -73,18 +73,36 @@
         }
 
         #player-container {
-            width: 80%;
-            height: 80%;
-            max-width: 1000px;
+            position:relative;
+            width: 100%;
+            height: 100%;
+            max-width: 4000px;
             background-color: black;
             display: inline-flex;
             
+        }
+
+        .cont{
+            backdrop-filter: blur(14px);
+            position: absolute;
+            top:80px;
+            left:180px;
+            border-radius: 20px;
+            padding:30px;
+            filter: grayscale(0);
+            background:rgba(20,23,23,0.7);
+            width: auto;
+            height: auto;
+            z-index:4;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            color:rgba(255,255,255,0.4);
         }
 
         /* Контейнер для плеера */
         #player {
             width: 100%;
             height: 100%;
+            border-radius: 0px;
         }
 
         .active a{
@@ -92,7 +110,21 @@
             color:#fff!important;
         }
         .plyr {
-            --plyr-color-main: #40009F; /* Устанавливаем оранжевый цвет */
+            border-radius: 0px; /* Закругляем углы */
+            overflow: hidden; /* Скрываем содержимое за пределами границ */
+           --plyr-color-main: #40009F; /* Устанавливаем оранжевый цвет */
+        }
+        .plyr--video, .plyr--audio {
+            border-radius: 0px; /* Закругляем края */
+            overflow: hidden; /* Скрываем элементы за пределами границ */
+        }
+
+        .clock{
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        .clockName{
+            font-size: 0.68rem;
         }
 
         h3{color:rgba(255,255,255,0.7);}
@@ -110,6 +142,10 @@
 
     <!-- Основной контейнер -->
     <div id="main-container">
+        <div class="cont">
+            <div class="clock" id="clock"></div>
+            <div class="clockName">Washington, DC</div>
+        </div>
         <!-- Контейнер для плеера -->
         <div id="player-container">
             <video id="player"></video>
@@ -187,10 +223,34 @@
             }
         }
 
+
+        const updateClock = () => {
+        const now = new Date();
+
+        // Вычитаем 7 часов
+        const adjustedTime = new Date(now.getTime() - 7 * 60 * 60 * 1000);
+
+        // Форматируем часы и минуты
+        const hours = String(adjustedTime.getHours()).padStart(2, '0');
+        const minutes = String(adjustedTime.getMinutes()).padStart(2, '0');
+
+        // Обновляем содержимое элемента
+        document.getElementById('clock').textContent = `${hours}:${minutes}`;
+    };
+
+    // Инициализация времени
+    updateClock();
+
+    // Обновление каждые 60 секунд
+    setInterval(updateClock, 60000);
+        
+
         // Изначально плеер пустой, не запускается до выбора канала
         document.addEventListener('DOMContentLoaded', () => {
             // По умолчанию запускаем первый канал
             changeChannel(channels[0].url);
+
+            
         });
     </script>
 </body>
