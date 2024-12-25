@@ -11,6 +11,9 @@
     <!-- Подключаем Plyr.js для удобного плеера -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/plyr@3.7.4/dist/plyr.css" />
     <script src="https://cdn.jsdelivr.net/npm/plyr@3.7.4/dist/plyr.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data.min.js"></script>
 
     <style>
         /* Стиль для основного контейнера */
@@ -124,15 +127,23 @@
         }
 
         .clock{
-            font-size: 2rem;
+            font-size: 2.4rem;
             font-weight: 400;
         }
         .clockName{
             font-size: 0.68rem;
+            opacity:0.5;
         }
 
         .widg{
             margin:0 10px;
+        }
+
+        .sep{
+            width:1px;
+            height: 50px;
+            margin:0 20px;
+            background:rgba(255,255,255,0.2);
         }
 
         h3{color:rgba(255,255,255,0.7);}
@@ -152,8 +163,23 @@
     <div id="main-container">
         <div class="cont">
             <div class="widg">
-                <div class="clock" id="clock"></div>
-                <div class="clockName">-7 hrs</div>
+                <div class="clock" id="clock1"></div>
+                <div class="clockName" id="clock1Anno"></div>
+            </div>
+
+            <div class="widg">
+                <div id="location2">
+                    <span id="location2-name" style="font-size: 0.8rem;">Loading...</span><br>
+                    <span id="location2-temperature" style="font-size: 1.2rem;">Temperature: Loading...</span><br>
+                    <span id="location2-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
+                </div>
+            </div>
+
+            <div class="sep"></div>
+
+            <div class="widg">
+                <div class="clock" id="clock2"></div>
+                <div class="clockName" id="clock2Anno"></div>
             </div>
             
             <div class="widg">
@@ -163,13 +189,7 @@
                     <span id="location1-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
                 </div>
             </div>
-            <div class="widg">
-                <div id="location2">
-                    <span id="location2-name" style="font-size: 0.8rem;">Loading...</span><br>
-                    <span id="location2-temperature" style="font-size: 1.2rem;">Temperature: Loading...</span><br>
-                    <span id="location2-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
-                </div>
-            </div>
+            
             
         </div>
         <!-- Контейнер для плеера -->
@@ -250,25 +270,23 @@
         }
 
 
-        const updateClock = () => {
-        const now = new Date();
+        const updateClocks = () => {
+        // Время для первой таймзоны (например, Лос-Анджелес)
+        const clock1Time = moment().tz('America/New_York').format('HH:mm');
+        document.getElementById('clock1').textContent = `${clock1Time}`;
+        document.getElementById('clock1Anno').textContent = `NEW YORK`;
 
-        // Вычитаем 7 часов
-        const adjustedTime = new Date(now.getTime() - 7 * 60 * 60 * 1000);
-
-        // Форматируем часы и минуты
-        const hours = String(adjustedTime.getHours()).padStart(2, '0');
-        const minutes = String(adjustedTime.getMinutes()).padStart(2, '0');
-
-        // Обновляем содержимое элемента
-        document.getElementById('clock').textContent = `${hours}:${minutes}`;
+        // Время для второй таймзоны (например, Токио)
+        const clock2Time = moment().format('HH:mm');
+        document.getElementById('clock2').textContent = `${clock2Time}`;
+        document.getElementById('clock2Anno').textContent = `LOCAL`;
     };
 
-    // Инициализация времени
-    updateClock();
+    // Инициализация: обновление часов сразу при загрузке
+    updateClocks();
 
-    // Обновление каждые 60 секунд
-    setInterval(updateClock, 60000);
+    // Обновление часов каждую секунду
+    setInterval(updateClocks, 1000*60);
 
 
 
