@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
 
         #sidebar a {
             color: rgba(0,0,0,1);
-            border-radius: 4px;
+            border-radius: 6px;
             color:rgba(255,255,255,0.4);
             font-weight: bold;
             text-decoration: none;
@@ -59,6 +59,7 @@
             display: block;
             padding: 5px;
             background-color: #000;
+            font-family: 'Fjalla One';
         }
 
         #sidebar a:hover {
@@ -92,8 +93,8 @@
         .cont{
             backdrop-filter: blur(14px);
             position: absolute;
-            top:40px;
-            left:180px;
+            top:24px;
+            left:140px;
             border-radius: 20px;
             padding:30px;
             filter: grayscale(0);
@@ -153,14 +154,17 @@
             background:rgba(255,255,255,0.2);
         }
 
-        h3{color:rgba(255,255,255,0.7);}
+        h3{
+            font-family: 'Fjalla One';
+            color:rgba(255,255,255,0.5);
+        }
     </style>
 </head>
 <body>
 
     <!-- Боковая панель -->
     <div id="sidebar">
-        <h3>Channels</h3>
+        <!-- <h3>Channels</h3> -->
         <ul id="channel-list">
             <!-- Каналы будут добавляться через JavaScript -->
         </ul>
