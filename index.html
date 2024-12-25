@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IPTV Player</title>
+    <title>TV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Onest:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
     <!-- Подключаем HLS.js -->
     <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
@@ -18,7 +22,7 @@
     <style>
         /* Стиль для основного контейнера */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Onest', sans-serif;
             display: flex;
             margin: 0;
             padding: 0;
@@ -88,7 +92,7 @@
         .cont{
             backdrop-filter: blur(14px);
             position: absolute;
-            top:80px;
+            top:40px;
             left:180px;
             border-radius: 20px;
             padding:30px;
@@ -129,10 +133,13 @@
         .clock{
             font-size: 2.4rem;
             font-weight: 400;
+            font-family: 'Fjalla One';
         }
         .clockName{
-            font-size: 0.68rem;
+            font-size: 0.58rem;
             opacity:0.5;
+            margin-top:3px;
+            margin-left:3px;
         }
 
         .widg{
@@ -141,7 +148,7 @@
 
         .sep{
             width:1px;
-            height: 50px;
+            height: 60px;
             margin:0 20px;
             background:rgba(255,255,255,0.2);
         }
@@ -169,9 +176,11 @@
 
             <div class="widg">
                 <div id="location2">
-                    <span id="location2-name" style="font-size: 0.8rem;">Loading...</span><br>
+                    <span id="location2-condition" style="font-size: 0.8rem;">Condition: Loading...</span><br>
                     <span id="location2-temperature" style="font-size: 1.2rem;">Temperature: Loading...</span><br>
-                    <span id="location2-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
+                    <span id="location2-name" style="font-size: 0.6rem;">Loading...</span>
+                    
+                    
                 </div>
             </div>
 
@@ -184,9 +193,9 @@
             
             <div class="widg">
                 <div id="location1">
-                    <span id="location1-name" style="font-size: 0.8rem;">Loading...</span><br>
+                    <span id="location1-condition" style="font-size: 0.8rem;">Condition: Loading...</span><br>
                     <span id="location1-temperature" style="font-size: 1.2rem;">Temperature: Loading...</span><br>
-                    <span id="location1-condition" style="font-size: 0.6rem;">Condition: Loading...</span>
+                    <span id="location1-name" style="font-size: 0.6rem;">Loading...</span>
                 </div>
             </div>
             
@@ -289,6 +298,29 @@
     setInterval(updateClocks, 1000*60);
 
 
+const conditions = {
+  "0": "Clear",
+  "1": "Partly cloudy",
+  "2": "Cloudy",
+  "3": "Overcast",
+  "45": "Fog",
+  "48": "Rime fog",
+  "51": "Light drizzle",
+  "53": "Moderate drizzle",
+  "55": "Dense drizzle",
+  "61": "Light rain",
+  "63": "Moderate rain",
+  "65": "Heavy rain",
+  "71": "Light snow",
+  "73": "Moderate snow",
+  "75": "Heavy snow",
+  "80": "Light showers",
+  "81": "Moderate showers",
+  "82": "Violent showers",
+  "95": "Thunderstorm",
+  "96": "Thunderstorm, light hail",
+  "99": "Thunderstorm, heavy hail"
+}
 
     const fetchWeatherForLocation = (latitude, longitude, locationId, name) => {
         const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
@@ -300,8 +332,8 @@
 
                 // Обновляем данные для указанной локации
                 document.getElementById(`${locationId}-name`).textContent = `${name}`;
-                document.getElementById(`${locationId}-temperature`).textContent = `${weather.temperature}°C`;
-                document.getElementById(`${locationId}-condition`).textContent = `Condition: ${weather.weathercode}`;
+                document.getElementById(`${locationId}-temperature`).textContent = `${Math.round(weather.temperature)}°C`;
+                document.getElementById(`${locationId}-condition`).textContent = `${conditions[weather.weathercode]}`;
             })
             .catch(error => {
                 console.error(`Error fetching weather data for ${locationId}:`, error);
