@@ -22,6 +22,7 @@
             height: 100vh;
             background-color: black; /* Темный фон страницы */
         }
+        
 
         /* Боковая панель с каналами */
         #sidebar {
@@ -86,6 +87,14 @@
             height: 100%;
         }
 
+        .active a{
+            
+            color:#fff!important;
+        }
+        .plyr {
+            --plyr-color-main: #40009F; /* Устанавливаем оранжевый цвет */
+        }
+
         h3{color:rgba(255,255,255,0.7);}
     </style>
 </head>
@@ -114,13 +123,14 @@
             // Можно добавить еще каналы сюда
             { name: 'ABC NEWS', url: 'https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8'},
             { name: 'CBS NEWS', url: 'https://cbsn-us.cbsnstream.cbsnews.com/out/v1/55a8648e8f134e82a470f83d562deeca/master.m3u8'},
-            { name: 'M2', url: 'https://live.m2.tv/hls3/stream.m3u8'},
+            //{ name: 'M2', url: 'https://live.m2.tv/hls3/stream.m3u8'},
             { name: 'Retro Music', url: 'https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8'},
-           { name: 'Happy Radio', url: 'https://tv.mediacp.eu:8081/happyradio/index.m3u8'},
-           //{ name: 'Winter', url: 'https://iptv.prosto.tv/ch327/video.m3u8'},
-           //{ name: 'Aquarium', url: 'http://iptv.prosto.tv:7000/ch325/video.m3u8'},
-           /*  { name: '80s-90s', url: ''},
-            { name: '', url: ''},
+           //{ name: 'Happy Radio', url: 'https://tv.mediacp.eu:8081/happyradio/index.m3u8'},
+           //{ name: 'A Music', url: 'https://30a-tv.com/music.m3u8'},
+           { name: 'Stereo HD', url: 'http://k3.usastreams.com:1935/CableLatino/88stereo/playlist.m3u8'},
+           { name: 'La Rock', url: 'http://138.117.4.70:8075/channel22/playlist.m3u8'},
+           //{ name: '80s-90s', url: 'http://cam.access.ly/play/live.php?mac=00:1a:79:b4:af:19&stream=814501&extension=m3u8'},
+            /*{ name: '', url: ''},
             { name: '', url: ''},
             { name: '', url: ''},  */
             
@@ -134,7 +144,17 @@
             const a = document.createElement('a');
             a.textContent = channel.name;
             a.href = '#';
-            a.onclick = () => changeChannel(channel.url);
+            a.onclick = () => {
+                                // Находим всех родителей <li>
+                const allLi = document.querySelectorAll('li');
+
+                // Удаляем класс active у всех <li>
+                allLi.forEach(li => li.classList.remove('active'));
+
+                // Добавляем класс active родителю текущего <a>
+                a.parentElement.classList.add('active');
+                changeChannel(channel.url)
+            };
             li.appendChild(a);
             channelList.appendChild(li);
         });
@@ -142,11 +162,13 @@
         let player;
 
         // Функция для смены канала
-        function changeChannel(url) {
+        const changeChannel = (url) => {
             // Останавливаем старый плеер
             if (player) {
                 player.destroy();
             }
+
+            
 
             // Инициализация нового плеера
             const videoElement = document.getElementById('player');

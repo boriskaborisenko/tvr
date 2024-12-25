@@ -1,0 +1,252 @@
+﻿#EXTM3U
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1382" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/i/ibiza_global_tv.png",00:Ibiza Global TV
+http://server10.streaming-pro.com:1937/live/ibgtvlive/playlist.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="10001/0" delay="1164" audio-track="rus" group-title="МУЗЫКАЛЬНЫЕ" tvg-name="Kiss TV" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/m2o_tv.png",00:M2O TV
+http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-b.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1264" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/m2o_tv.png",00:M2O TV
+http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8?q=?seg-user-zona-iptv.ru-v1-a1.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1316" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/m2o_tv.png",00:M2O TV
+http://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/index_600_av-p.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1551" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/m2o_tv.png",00:M2O TV
+http://m2otv-lh.akamaihd.net:80/i/m2oTv_1@186074/index_600_av-b.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1298" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/o/otto_8_fm_tv.png",00:OTTO 8 FM TV
+http://217.182.192.240:8080/hls/ottofmtv/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1315" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/o/otto_8_fm_tv.png",00:OTTO 8 FM TV
+http://217.182.192.240:8080/hls/ottofmtv/1_2/index.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1433" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/s/sonus_fm.png",00:Sonus FM
+http://www.sonus.fm:1935/public/stream_720p/chunklist_w514335426.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="10001/0" delay="1433" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/s/sonus_fm.png",00:Sonus FM
+http://138.201.226.83:1935/public/stream_360p/playlist.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1434" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/s/sonus_fm.png",00:Sonus FM
+http://www.sonus.fm:1935/public/stream_720p/playlist.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="2850" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/13_max.png",13 Max
+http://coninfo.net:1935/13maxhd/live_720p/chunklist_w352743074.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1130" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+http://cdn-01.bonus-tv.ru:8080/1HDmusic/tracks-v2a1/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1231" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+http://cdn-01.bonus-tv.ru:8080/1HDmusic/tracks-v3a1/index.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1248" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+https://cdn-01.bonus-tv.ru:8090/1HDmusic/tracks-v2a1/index.m3u8
+#EXTINF:40000 player="1" vsize="" type="select" info="3/0" delay="1248" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+http://85.112.117.239/streaming/firstmuz/16/hd/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1316" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+http://cdn-01.bonus-tv.ru:8080/1HDmusic/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1872" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+https://daserstehdint-lh.akamaihd.net/i/daserstehd_int@629195/index_1992_av-p.m3u8?
+#EXTINF:-1 player="1" vsize="FHD" type="select" info="801/0" delay="2210" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+http://cdn-01.bonus-tv.ru:8080/1HDmusic/tracks-v1a1/index.m3u8
+#EXTINF:-1 player="2" vsize="HD" type="select" info="10001/0" delay="11133" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1hd.png",1HD
+http://6dfbb588.melpakomn.ru/iptv/QZH6CQVGHR6Z99/238/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1349" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1music.png",1Music
+http://stream.1music.hu/stream/1music.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1366" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1music.png",1Music
+http://92.249.129.152/stream/1music.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1383" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1music.png",1Music
+http://1mstream.digicable.hu/stream/1music.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2597" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/1/1music.png",1Music
+http://1music.hu/1music.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1316" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/2/21_hd.png",21 HD (Армения)
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="3441" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/4/4fun_dance.png",4FUN Dance
+http://hls.redefine.pl/99520853/1576/0/hls576/masterlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2261" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/4/4fun_gold.png",4FUN Gold
+http://hls.redefine.pl/25670764/1580/0/hls576/masterlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2563" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/4/4fun_gold.png",4FUN Gold
+http://hls.redefine.pl/25670764/1580/0/hls576/576p/list.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2430" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/4/4fun_tv.png",4FUN TV
+http://hls.redefine.pl/99520853/1576/0/hls576/576p/list.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2447" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/4/4fun_tv.png",4FUN TV
+http://hls.redefine.pl/894619ED/1579/0/hls576/masterlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1130" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/acb_tv.png",ACB TV
+http://cdn-01.bonus-tv.ru:8080/9volna/tracks-v2a1/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1079" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/acb_tv.png",ACB TV (Черкесск)
+http://cdn-01.bonus-tv.ru:8080/9volna/tracks-v1a1/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1349" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/atv_rub_tv.png",ATV RUB TV
+http://ott-cdn.ucom.am/s73/04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1147" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/arirang_tv.png",Arirang TV
+http://cdn-01.bonus-tv.ru:8080/arirang_edge/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1147" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/arirang_tv.png",Arirang TV
+http://cdn-01.bonus-tv.ru:8080/arirang_edge/tracks-v1a1/index.m3u8
+#EXTINF:-1 player="2" vsize="HD" type="select" info="701/0" delay="7237" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/arirang_tv.png",Arirang TV
+http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b1728000_sleng.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1231" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/a/armenia_tv_3.png",Armenia TV 3
+http://ott-cdn.ucom.am/s42/04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="802/0" delay="1232" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bruzz.png",BRUZZ
+http://hls-origin01-bruzz.cdn02.rambla.be/adliveorigin-bruzz/_definst_/AZwy8w.smil/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1383" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/beblack_africa.png",BeBlack Africa
+http://ec.playmedia.fr/beblack/africa/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1215" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/beblack_caribbean.png",BeBlack Caribbean
+http://ec.playmedia.fr/beblack/caribbean/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1484" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/beblack_classik.png",BeBlack Classik
+http://ec.playmedia.fr/beblack/classik/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2580" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/box_hits.png",Box Hits
+http://csm-e.tm.yospace.com/csm/extlive/boxplus01,boxhits-desktop.m3u8?yo.up=http%3a%2f%2fboxtv-origin-elb.cds1.yospace.com%2fuploads%2fboxhits%2f
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1146" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://91.231.219.145:80/tv_bridgetv/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1231" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://ott-cdn.ucom.am/s34/04.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1232" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://plmgr-bridgemedia.cdnvideo.ru/bridge_tv/playlist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1316" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://ott-cdn.ucom.am/s34/01.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1317" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://6dfbb588.melpakomn.ru/iptv/QZH6CQVGHR6Z99/236/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1399" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://ott-cdn.ucom.am/s34/03.m3u8
+#EXTINF:1917756 player="1" vsize="" type="select" info="3/0" delay="2276" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://bl.webcaster.pro/media/playlist/free_9d6a8624a7702dddd15b6c4fbf272152_hd/65_91554723/576i_high/6b805dbede42bab6bbb6c3b829e4a31b/4639979456.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2597" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://ott-cdn.ucom.am/s34/index.m3u8
+#EXTINF:1916956 player="1" vsize="" type="select" info="3/0" delay="3170" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://bl.webcaster.pro/media/start/free_9d6a8624a7702dddd15b6c4fbf272152_hd/65_91554723/6b805dbede42bab6bbb6c3b829e4a31b/4639979456.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="4183" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://91.231.219.145:80/tv_bridgetv_HD/video.m3u8
+#EXTINF:0 player="2" vsize="" type="select" info="701/0" delay="7506" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv.png",Bridge TV
+http://95.128.243.226:7780/udp/224.0.90.214:1234
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1181" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_classic.png",Bridge TV Classic
+http://plmgr-bridgemedia.cdnvideo.ru/bridge_classic/playlist.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1079" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_dance.png",Bridge TV Dance
+http://plmgr-bridgemedia.cdnvideo.ru/bridge_dance/playlist.m3u8
+#EXTINF:0 player="2" vsize="" type="select" info="10001/0" delay="8501" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_dance.png",Bridge TV Dance
+http://95.128.243.226:7780/udp/224.0.90.190:1234
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1197" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_russkij_khit.png",Bridge TV Русский хит
+http://ott-cdn.ucom.am/s78/01.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1298" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_russkij_khit.png",Bridge TV Русский хит
+http://ott-cdn.ucom.am/s78/03.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1399" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_russkij_khit.png",Bridge TV Русский хит
+http://ott-cdn.ucom.am/s78/04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1417" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/bridge_tv_russkij_khit.png",Bridge TV Русский хит
+http://ott-cdn.ucom.am/s78/index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1823" group-title="РЕГИОНАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/b/busuioc_tv.png",Busuioc TV
+https://web.sats.gstv.tech/cpl/21b7bed4-9e50-4bed-8668-9be455cc4e11/busuioctv.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="701/0" delay="3239" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/c/canal_u.png",CANAL U
+http://81.196.0.126/utvedge/utvlivehls/chunklist_w1688658104.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="10001/0" delay="3121" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/c/capital.png",CAPITAL
+http://capital-live-tv-01-hls.akamai.media.kataweb.it/i/CapitalTv_1@183098/master.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="8653" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING
+https://www.djing.com/tv/28049-04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9632" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING
+https://www.djing.com/tv/live.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="6781" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Animation HD)
+http://www.djing.com/tv/animation.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="7101" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Animation)
+https://www.djing.com/tv/a-28049-03.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="10627" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Animation)
+https://www.djing.com/tv/animation.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="9699" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Avicii HD)
+https://djing.com/tv/s-28449-05-avicii.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="9716" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Avicii HD)
+https://djing.com/tv/s-28416-05-avicii.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="5449" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Avicii)
+http://www.djing.com/tv/session_avicii.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9346" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Classic HD)
+http://www.djing.com/tv/hits.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="6950" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Classics)
+http://www.djing.com/tv/classics.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="8333" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Classics)
+https://www.djing.com/tv/i-28049-04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9278" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Classics)
+https://www.djing.com/tv/hits.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="9766" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Classics)
+https://www.djing.com/tv/classics.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="7505" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Electro Rock HD)
+http://www.djing.com/tv/session_electro-rock.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="8721" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Electro Rock)
+https://www.djing.com/tv/session_electro-rock.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="8805" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (French touch)
+https://www.djing.com/tv/s-28049-03-french-touch.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="3/0" delay="9159" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (French touch)
+https://www.djing.com/tv/session_french-touch.m3u8
+#EXTINF:-1 player="2" vsize="HD" type="select" info="801/0" delay="14692" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Hedonist HD)
+https://djing.com/tv/s-28416-05-hedonist.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="8568" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Hedonist)
+https://www.djing.com/tv/session_hedonist.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="5987" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Ibiza HD)
+http://www.djing.com/tv/dancefloor.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9345" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Ibiza)
+https://www.djing.com/tv/d-28049-03.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9429" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Ibiza)
+http://djing.com/tv/dancefloor.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9951" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Ibiza)
+https://www.djing.com/tv/dancefloor.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="8467" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Karaoke HD)
+http://www.djing.com/tv/karaoke.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="2834" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Karaoke)
+https://www.djing.com/tv/karaoke.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="7354" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Summer Vibes HD)
+http://www.djing.com/tv/session_summer-vibes.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="7474" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Summer Vibes)
+https://www.djing.com/tv/s-28049-03-summer-vibes.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9936" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Summer Vibes)
+https://www.djing.com/tv/session_summer-vibes.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="3/0" delay="9006" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (TV HD)
+http://www.djing.com/tv/live.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="9564" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Underground HD)
+http://www.djing.com/tv/underground.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="6730" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Underground)
+http://djing.com/tv/underground.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="9766" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Underground)
+https://www.djing.com/tv/underground.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="801/0" delay="10425" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/djing.png",DJING (Wild EDM)
+http://www.djing.com/tv/session_wild-edm.m3u8
+#EXTINF:-1 player="1" vsize="HD" type="select" info="801/0" delay="1468" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/dmf_tv.png",DMF TV
+http://tv.artcom-venture.de:1322/dmf/tv_720.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2547" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/dream_tv.png",DREAM TV
+http://live.netd.com.tr/S1/HLS_LIVE/dreamtv/1000/prog_index.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2783" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/dream_tv.png",DREAM TV
+http://live.netd.com.tr/S2/HLS_LIVE/dreamtv/1000/prog_index.m3u8
+#EXTINF:-1 player="2" vsize="" type="select" info="10001/0" delay="2513" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/d/dstv.png",DSTV (BG)
+rtmp://46.249.95.140/live/livestream
+http://nano.teleservice.su:8080/hls/luxury.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1215" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm.png",MCM
+http://92.43.140.249/s49/04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1130" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://91.231.219.145:80/tv_mcm_top/video.m3u8?q=?seg-user-zona-iptv.ru-v1-a1.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1197" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://ott-cdn.ucom.am/s49/index.m3u8?q=?seg-user-zona-iptv.ru-v1-a1.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1214" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://ott-cdn.ucom.am/s49/04.m3u8?q=?seg-user-zona-iptv.ru-v1-a1.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1332" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://ott-cdn.ucom.am/s49/04.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="1366" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://ott-cdn.ucom.am/s49/01.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2176" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://91.231.219.145:80/tv_mcm_top/video.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2192" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://ott-cdn.ucom.am/s49/03.m3u8
+#EXTINF:-1 player="1" vsize="" type="select" info="801/0" delay="2412" group-title="МУЗЫКАЛЬНЫЕ" tvg-logo="http://ekzot.ucoz.net/ch_icons/m/mcm_top.png",MCM TOP
+http://ott-cdn.ucom.am/s49/index.m3u8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
